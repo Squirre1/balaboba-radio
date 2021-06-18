@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Description
+
+This service contains example of using [SpeechSynthesisUtterance](https://developer.mozilla.org/ru/docs/Web/API/SpeechSynthesisUtterance) and [Yandex Balaboba](https://yandex.ru/lab/yalm) services. The program randomly chooses one word from said phrases and generates a new one. I've noticed that it sounds like a radio, where Balaboba is a single weird radio presenter.
+
+## [Demo](https://lucid-boyd-29b100.netlify.app/)
+Please, don't be offended by this strange radio
+
 ## Getting Started
 
 First, run the development server:
