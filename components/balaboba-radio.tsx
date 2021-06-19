@@ -74,19 +74,15 @@ export default function BalabobaRadio() {
                 <h1 className={styles.title}>
                     Welcome to Balaboba radio
                 </h1>
-                {!started && (
+                {!started ? (
                     <div
                         className={styles.card}
                         onClick={() => setStarted(true)}
                     >
                         <h2 className={styles.title}>Start</h2>
                     </div>
-                )}
-                {started && (
-                    <div
-                        className={styles.card}
-                        onClick={() => setStarted(true)}
-                    >
+                ) : (
+                    <div className={styles.card}>
                         <p>
                             Здесь Балабоба просто генерирует и произносит текст 
                         </p>
