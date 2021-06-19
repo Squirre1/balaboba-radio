@@ -43,7 +43,8 @@ export default function BalabobaRadio() {
                         },
                         body: JSON.stringify({
                             "query": parts[Math.floor(Math.random() * parts.length)],
-                            "intro": 0,
+                            // Balaboba styles
+                            "intro": Math.floor(Math.random() * (11 - 0 + 1)) + 0,
                             "filter": 1
                         })
                     });
