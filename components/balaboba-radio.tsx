@@ -1,6 +1,18 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
+const randomText = `
+    Слушайте мою клятву и будьте свидетелями моего обета!
+    Ночь собирается, и начинается мой дозор.
+    Он не окончится до самой моей смерти.
+    Я не возьму себе ни жены, ни земель, не буду отцом детям.
+    Я не надену корону и не буду добиваться славы.
+    Я буду жить и умру на своём посту.
+    Я — меч во тьме; Я — дозорный на Стене;
+    Я — щит, который охраняет царство людей.
+    Я отдаю свою жизнь и честь Ночному Дозору в эту ночь и во все грядущие!
+`
+
 export default function BalabobaRadio() {
 
     const [started, setStarted] = useState(false)
@@ -31,7 +43,7 @@ export default function BalabobaRadio() {
             utterance.onend = async () => {
                 isPlaying = false
 
-                const parts = text.split(' ')
+                const parts = text ? text.split(' ') : randomText.split(' ')
 
                 try {
                     setLoading(true)
